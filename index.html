@@ -9,48 +9,52 @@
 <body>
     <div class="form-container">
         <h2>Library Membership Application Form</h2>
+        
+        
         <form>
             <div class="form-group">
-                <label for="fullname-th">ชื่อ-นามสกุล (ภาษาไทย):</label>
+                <label for="fullname-th">ชื่อ-นามสกุล (ภาษาไทย): <span class="required">*</span></label>
                 <input type="text" id="fullname-th" name="fullname-th" required>
             </div>
 
             <div class="form-group">
-                <label for="fullname-en">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
+                <label for="fullname-en">ชื่อ-นามสกุล (ภาษาอังกฤษ): <span class="required">*</span></label>
                 <input type="text" id="fullname-en" name="fullname-en" required>
             </div>
 
             <div class="form-group">
-                <label>เพศ:</label>
+                <label>เพศ: <span class="required">*</span></label>
                 <div class="gender-options">
-                    <input type="radio" id="male" name="gender" value="male">
+                    <input type="radio" id="male" name="gender" value="male" required>
                     <label for="male">ชาย</label>
 
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="female" required>
                     <label for="female">หญิง</label>
 
-                    <input type="radio" id="other" name="gender" value="other">
+                    <input type="radio" id="other" name="gender" value="other" required>
                     <label for="other">อื่น ๆ</label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="student-id">รหัสนักศึกษา:</label>
+                <label for="student-id">รหัสนักศึกษา: <span class="required">*</span></label>
                 <input type="text" id="student-id" name="student-id" required>
+                
             </div>
 
             <div class="form-group">
-                <label for="faculty">คณะที่ศึกษา:</label>
+                <label for="faculty">คณะที่ศึกษา: <span class="required">*</span></label>
                 <input type="text" id="faculty" name="faculty" required>
             </div>
 
             <div class="form-group">
-                <label for="email">ที่อยู่อีเมล:</label>
+                <label for="email">ที่อยู่อีเมล: <span class="required">*</span></label>
                 <input type="email" id="email" name="email" required>
+                
             </div>
 
             <div class="form-group">
-                <label for="dob">วันเดือนปีเกิด:</label>
+                <label for="dob">วันเดือนปีเกิด: <span class="required">*</span></label>
                 <input type="date" id="dob" name="dob" required>
             </div>
 
@@ -75,4 +79,5 @@
     </div>
 </body>
 </html>
+
 
