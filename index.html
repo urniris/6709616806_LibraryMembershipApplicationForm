@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Library Membership Application Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname-th">ชื่อ-นามสกุล (ภาษาไทย):</label>
+                <input type="text" id="fullname-th" name="fullname-th" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fullname-en">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
+                <input type="text" id="fullname-en" name="fullname-en" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">ชาย</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">อื่น ๆ</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="student-id">รหัสนักศึกษา:</label>
+                <input type="text" id="student-id" name="student-id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="faculty">คณะที่ศึกษา:</label>
+                <input type="text" id="faculty" name="faculty" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">ที่อยู่อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">วันเดือนปีเกิด:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="book-interest">ประเภทของหนังสือที่สนใจ:</label>
+                <select id="book-interest" name="book-interest">
+                    <option value="fiction">นวนิยาย</option>
+                    <option value="non-fiction">สารคดี</option>
+                    <option value="science">วิทยาศาสตร์</option>
+                    <option value="history">ประวัติศาสตร์</option>
+                    <option value="technology">เทคโนโลยี</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="subscribe">ต้องการรับข่าวสารทางอีเมล:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
